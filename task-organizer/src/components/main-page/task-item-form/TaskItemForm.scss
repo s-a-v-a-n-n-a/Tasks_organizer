@@ -1,0 +1,43 @@
+.task-item-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 650px;
+  height: 60px;
+
+  background: var(--grayscale_body_background);
+
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--primary_dark);
+}
+
+.task-name-input {
+  border: none;
+  background-color: transparent;
+  margin-left: 30px;
+
+  min-width: 50px;
+  width: fit-content;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: var(--grayscale_title);
+}
+
+.task-name-input:focus {
+  outline: none;
+}
+
+.task-name-input::placeholder {
+  color: var(--grayscale_line);
+}

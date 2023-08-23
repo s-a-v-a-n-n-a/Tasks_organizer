@@ -1,39 +1,86 @@
-import React, { Component } from 'react'
-import "./TasksPage.scss"
-import TaskItem from "../task-item";
+import React, {useEffect, useState} from 'react'
 import moment, { Moment } from 'moment';
+import { v4 as uuidv4 } from 'uuid';
 
-interface Task {
-    name: string;
-    done: boolean;
-    priority: number;
-    deadline: Moment | null;
+import "./TasksPage.scss"
+
+import TaskItem, { Task } from "../task-item";
+import TaskStatusFilter from "../task-status-filter";
+import SearchBar from "../search-bar";
+import TaskItemForm from "../task-item-form";
+
+interface TaskElement {
+    id: number;
+    task: Task;
 }
 
-export default class TasksPage extends Component {
-    headerText = "All tasks";
-    createTaskText = "Add task"
+function TasksPage() {
+    const headerText = "All tasks";
+    const createTaskText = "Add task"
 
-    tasks = ["Task1", "Task2", "Task3"]
-
-    taskItems = this.tasks.map((task) => {
-        return (
-            <li className="task-item"><TaskItem taskText={ task }/></li>
-        )
-    })
-    render() {
-        return (
-            <div className="tasks-page-wrapper">
-                <header className="tasks-page-header">
-                    { this.headerText }
-                </header>
-                <ul className="task-list">
-                    { this.taskItems }
-                </ul>
-                <button className="create-task-button">
-                    <div className="create-task-button-text">{ this.createTaskText }</div>
-                </button>
-            </div>
-        )
+    let deleteTask = (id) => {
+        let taskIdx = tasks.findIndex((task) => task.id === id);
+        setTasks(tasks => [
+            ...tasks.slice(0, taskIdx),
+            ...tasks.slice(taskIdx + 1)
+        ]);
     }
+
+    let addTaskCallback = (task) => {
+        let newId = uuidv4()
+        setTasks(tasks => [...tasks, {id: newId, ...task}])
+
+        hideFormComponent();
+    }
+
+    let showFormComponent = () => {
+        setFormComponent(<TaskItemForm createTaskElementCallback={ addTaskCallback }
+                                       resetCreatingTask={ hideFormComponent }/>)
+    }
+
+    let hideFormComponent = () => {
+        setFormComponent(<div/>)
+    }
+
+    let [formComponent, setFormComponent] = useState(<div/>)
+    let [tasks, setTasks] = useState([
+        { id: 1, taskName: "Task1", done: false, priority: 0, deadline: null },
+        { id: 2, taskName: "Task2", done: false, priority: 0, deadline: null },
+        { id: 3, taskName: "Task3", done: false, priority: 0, deadline: null }
+    ]);
+    let [taskItems, setTaskItems] = useState(tasks.map((taskElement) => {
+        let { id, ...task } = taskElement
+        return (
+            <li className="task-item" key={ id }><TaskItem task={ task } onDeleted={() => deleteTask(id)}/></li>
+        )
+    }))
+
+    useEffect(() => {
+        setTaskItems(tasks.map((taskElement) => {
+            let { id, ...task } = taskElement
+            return (
+                <li className="task-item" key={ id }><TaskItem task={ task } onDeleted={ () => deleteTask(id) }/></li>
+            )
+        }))
+    }, [tasks]);
+
+    return (
+        <div className="tasks-page-wrapper">
+            <header className="tasks-page-header">
+                { headerText }
+            </header>
+            <TaskStatusFilter/>
+            <SearchBar/>
+            <ul className="task-list">
+                { taskItems }
+            </ul>
+            { formComponent }
+            <button className="create-task-button"
+                    onClick={ showFormComponent }>
+                { createTaskText }
+            </button>
+        </div>
+    )
 }
+
+export default TasksPage;

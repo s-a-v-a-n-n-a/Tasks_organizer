@@ -1,0 +1,51 @@
+.buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: fit-content;
+
+  gap: 20px;
+}
+
+.status-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  background-color: var(--secondary_middle);
+
+  width: fit-content;
+  min-width: 100px;
+  min-height: 50px;
+
+  border-radius: 20px;
+
+  transition: transform 0.4s;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px;
+
+  text-align: center;
+
+  color: var(--grayscale_title);
+}
+
+.status-button:hover {
+  background-color: var(--secondary_main);
+  transform: scale(1.1, 1.1);
+}
+
+.status-button:focus {
+  outline: 0;
+
+  background-color: var(--secondary_main);
+  transform: scale(1.1, 1.1);
+}
