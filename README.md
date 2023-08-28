@@ -23,3 +23,15 @@ Design was developed in figma.
 ![Project model](./materials/Project-design.jpg "project model")
 
 <em><b>Picture 2.</b> Website model</em>
+
+## Showcase
+
+<figure class="video_container">
+  <iframe src="./materials/TaskOrganizerShowcase.mp4" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="./materials/Project-design.jpg">
+    <source src="./materials/TaskOrganizerShowcase.mp4" type="video/mp4">
+  </video>
+</figure>

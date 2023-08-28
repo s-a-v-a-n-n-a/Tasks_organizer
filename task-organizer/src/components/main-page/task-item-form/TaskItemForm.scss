@@ -13,31 +13,79 @@
   border-style: solid;
   border-width: 2px;
   border-color: var(--primary_dark);
+  color: var(--primary_dark);
+
+  gap: 10px;
 }
 
-.task-name-input {
+.task-input {
   border: none;
   background-color: transparent;
-  margin-left: 30px;
 
-  min-width: 50px;
   width: fit-content;
 
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+
   display: flex;
   align-items: center;
-
-  color: var(--grayscale_title);
 }
 
-.task-name-input:focus {
+.task-input:focus {
   outline: none;
 }
 
-.task-name-input::placeholder {
+.task-input::placeholder {
   color: var(--grayscale_line);
+}
+
+.task-name-input {
+  margin-left: 30px;
+
+  font-size: 20px;
+  line-height: 24px;
+
+  min-width: 50px;
+}
+
+.task-priority-input {
+  max-width: 100px;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.task-priority-input {
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+}
+
+.deadline-picker {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.deadline-picked {
+}
+
+.task-deadline-input {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.task-deadline-input {
+}
+
+.popover-wrapper-form {
+}
+
+.calendar-button-form {
+  color: var(--primary_darkest)
+}
+
+.button-wrapper-form {
+  border: none;
+  background-color: transparent;
 }

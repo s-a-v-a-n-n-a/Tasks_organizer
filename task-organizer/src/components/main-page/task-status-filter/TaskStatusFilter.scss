@@ -43,7 +43,7 @@
   transform: scale(1.1, 1.1);
 }
 
-.status-button:focus {
+.status-button:active {
   outline: 0;
 
   background-color: var(--secondary_main);

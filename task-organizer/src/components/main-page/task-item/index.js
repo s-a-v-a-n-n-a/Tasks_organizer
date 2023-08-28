@@ -1,3 +1,4 @@
-import TaskItem from "./TaskItem";
+import TaskItem, { outdated } from "./TaskItem";
 
+export { outdated };
 export default TaskItem;
