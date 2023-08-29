@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 
 import "./TasksPage.scss"
@@ -100,7 +100,6 @@ function TasksPage() {
             case State.AllSoon:
                 return items.slice().sort((a, b) => {
                     if (a.deadline.getTime() === b.deadline.getTime()) {
-                        console.log("Same date");
                         return b.priority - a.priority;
                     } else {
                         return a.deadline.getTime() - b.deadline.getTime();
@@ -160,7 +159,6 @@ function TasksPage() {
     let [taskItems, setTaskItems] = useState(spreadTaskItems)
 
     useEffect(() => {
-        console.log("changing task items")
         setTaskItems(spreadTaskItems);
     }, [tasks, visibleState, searchTerm]);
 

@@ -9,7 +9,6 @@ function DisposableDataPinker(props) {
 
     let handleSelection = (date, { source }) => {
         if (source === 'date') {
-            console.log(new Date(date).toLocaleDateString());
             dateSwitcher(new Date(date));
         }
     }
@@ -19,9 +18,7 @@ function DisposableDataPinker(props) {
                                      onSelect={ handleSelection }
                                      className="calendar-properties"/> }
                  className={ popoverClassNames }>
-            <button className="button-wrapper">
-                <i className="bi bi-calendar calendar-button"/>
-            </button>
+            <i className="bi bi-calendar calendar-button"/>
         </Popover>
     );
 }

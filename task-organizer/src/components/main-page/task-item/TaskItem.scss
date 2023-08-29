@@ -9,21 +9,8 @@
   min-width: 100%;
   height: 60px;
 
-  //background: var(--grayscale_body_background);
   border-radius: 20px;
 }
-
-//.task-item-wrapper:hover {
-//  border-style: solid;
-//  border-width: 2px;
-//  border-color: var(--primary_dark);
-//}
-//
-//.task-item-wrapper:focus {
-//  border-style: solid;
-//  border-width: 2px;
-//  border-color: var(--primary_dark);
-//}
 
 .relevant {
   background: var(--grayscale_body_background);
@@ -99,8 +86,6 @@
 
   margin-right: 30px;
   margin-left: auto;
-
-  //color: var(--primary_dark)
 }
 
 .positive-props {}
