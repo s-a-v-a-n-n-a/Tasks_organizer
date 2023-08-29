@@ -16,11 +16,11 @@ To run the project, clone the repository and run the following commands:
 
 Design was developed in figma.
 
-<img src="/materials/Colors.jpg" alt="Picture 1" width="400">
+<img src="/materials/Colors.jpg" alt="Picture 1" width="700">
 
 <em><b>Picture 1.</b> Colors that are used in project</em>
 
-<img src="/materials/Project-design.jpg" alt="Picture 2" width="400">
+<img src="/materials/Project-design.jpg" alt="Picture 2" width="700">
 
 <em><b>Picture 2.</b> Website model</em>
 
