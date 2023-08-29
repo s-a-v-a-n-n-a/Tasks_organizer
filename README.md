@@ -24,14 +24,33 @@ Design was developed in figma.
 
 <em><b>Picture 2.</b> Website model</em>
 
-## Showcase
+## Functional showcase
 
-<figure class="video_container">
-  <iframe src="./materials/TaskOrganizerShowcase.mp4" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
+<ul>
+<li>Tasks can be deleted</li> 
+<li>Priority of a task can be changed priority can be changed in any direction</li>
+<li>Tasks can be sorted by priority or deadline date</li>
+<li>Search bar finds tasks with certain substring, case not matter</li>
+</ul>
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="./materials/Project-design.jpg">
-    <source src="./materials/TaskOrganizerShowcase.mp4" type="video/mp4">
-  </video>
-</figure>
+![Deletion, prioritization, sort and searching showcase](https://github.com/s-a-v-a-n-n-a/Tasks_organizer/blob/main/materials/delete-prioritize-sort-find.gif)
+
+<em><b>GIF 1.</b> Deletion, prioritization, sort and searching showcase.</em>
+
+<ul>
+<li>Tasks can be added. If name is not typed, it is <code>Smth important</code> by default<, if priority is not typed, it is <code>0</code> by default, if deadline is not picked, it is next day date by default</li> 
+<li>Tasks can be marked done and not done</li>
+<li>Tasks that have deadline before current date are showed in warning yellow colors and can be showed by button <code>Outdated</code></li>
+</ul>
+
+![Adding, marking done, outdated tasks showcase](https://github.com/s-a-v-a-n-n-a/Tasks_organizer/blob/main/materials/add-done-outdated.gif)
+
+<em><b>GIF 2.</b> Adding, marking done, outdated tasks showcase.</em>
+
+<ul>
+<li>If there are too many tasks on page, they can be scrolled</li> 
+</ul>
+
+![Scrolling showcase](https://github.com/s-a-v-a-n-n-a/Tasks_organizer/blob/main/materials/scroll.gif)
+
+<em><b>GIF 2.</b> Scrolling showcase.</em>
