@@ -16,11 +16,11 @@ To run the project, clone the repository and run the following commands:
 
 Design was developed in figma.
 
-![Colors](./materials/Colors.jpg "project colors")
+<img src="/materials/Colors.jpg" alt="Picture 1" width="400">
 
 <em><b>Picture 1.</b> Colors that are used in project</em>
 
-![Project model](./materials/Project-design.jpg "project model")
+<img src="/materials/Project-design.jpg" alt="Picture 2" width="400">
 
 <em><b>Picture 2.</b> Website model</em>
 
@@ -53,4 +53,4 @@ Design was developed in figma.
 
 ![Scrolling showcase](https://github.com/s-a-v-a-n-n-a/Tasks_organizer/blob/main/materials/scroll.gif)
 
-<em><b>GIF 2.</b> Scrolling showcase.</em>
+<em><b>GIF 3.</b> Scrolling showcase.</em>
