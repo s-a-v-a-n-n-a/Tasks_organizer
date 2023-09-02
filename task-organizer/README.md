@@ -54,3 +54,9 @@ Design was developed in figma.
 ![Scrolling showcase](https://github.com/s-a-v-a-n-n-a/Tasks_organizer/blob/main/task-organizer/materials/scroll.gif)
 
 <em><b>GIF 3.</b> Scrolling showcase.</em>
+
+## TODO
+
+<ul>
+<li> Add color themes with <code>useContext</code> hook
+</ul>

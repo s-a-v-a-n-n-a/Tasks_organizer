@@ -1,0 +1,46 @@
+body {
+  --pokemon_primary_main: #FA3D34;
+  --pokemon_primary_darkest: #6A0B07;
+  --pokemon_primary_dark: #A21811;
+  --pokemon_primary_middle: #FC6E66;
+  --pokemon_primary_light: #FFE4E2;
+
+  --pokemon_secondary_main: #218E98;
+  --pokemon_secondary_darkest: #033A40;
+  --pokemon_secondary_dark: #0B5B63;
+  --pokemon_secondary_middle: #54C1CC;
+  --pokemon_secondart_light: #D2FBFF;
+
+  --pokemon_tertiary_main: #A6E830;
+  --pokemon_tertiary_darkest: #2B4102;
+  --pokemon_tertiary_dark: #679710;
+  --pokemon_tertiary_middle: #C0F463;
+  --pokemon_tertiary_light: #F4FFE0;
+
+  --pokemon_error_main: #950AA1;
+  --pokemon_error_darkest: #46054B;
+  --pokemon_error_lightest: #F9D;
+
+  --pokemon_success_main: #3F70E1;
+  --pokemon_success_darkest: #051947;
+  --pokemon_success_lightest: #D4DEFF;
+
+  --pokemon_warning_main: #D69338;
+  --pokemon_warning_darkest: #432803;
+  --pokemon_warning_lightest: #FFEBCF;
+
+  --pokemon_grayscale_title: #111417;
+  --pokemon_grayscale_body: #0B2828;
+  --pokemon_grayscale_label: #193E3E;
+  --pokemon_grayscale_icons: #273F3F;
+  --pokemon_grayscale_line: #3D4F4F;
+  --pokemon_grayscale_input_background: #748A8A;
+  --pokemon_grayscale_body_background: #C1D8D8;
+  --pokemon_grayscale_white: #F4FBF9;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+
+  }
+}

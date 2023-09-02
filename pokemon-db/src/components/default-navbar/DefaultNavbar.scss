@@ -1,0 +1,64 @@
+.default-navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 20px;
+
+  width: 100%;
+  height: fit-content;
+
+  margin-top: 30px;
+}
+
+.navbar-header {
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+
+  color: var(--pokemon_grayscale_title);
+}
+
+.navigation-buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.navigation-button {
+  border: none;
+
+  background-color: var(--pokemon_secondary_main);
+  border-radius: 30px;
+
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  height: 60px;
+  width: fit-content;
+  padding: 0 30px 0 30px;
+
+  color: var(--pokemon_grayscale_white);
+  transition: transform 0.4s;
+}
+
+.navigation-button:hover {
+  background-color: var(--pokemon_secondary_dark);
+  transform: scale(1.2, 1.2);
+}
+
+.navigation-button:active {
+  outline: 0;
+
+  background-color: var(--pokemon_secondary_dark);
+  transform: scale(1.2, 1.2);
+}

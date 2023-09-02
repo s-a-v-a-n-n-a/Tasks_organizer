@@ -1,0 +1,38 @@
+.pokemon-toggler-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  align-self: flex-start;
+
+  gap: 20px;
+
+  max-width: 250px;
+}
+
+.toggle-button {
+  background-color: var(--pokemon_tertiary_middle);
+  color: var(--pokemon_tertiary_dark);
+
+  padding: 20px;
+
+  font-family: 'Luckiest Guy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+
+  border: none;
+  border-radius: 20px;
+
+  transition: transform 0.2s, transform-origin 0.2s;
+}
+
+.toggle-button:hover {
+  background-color: var(--pokemon_tertiary_main);
+  color: var(--pokemon_tertiary_darkest);
+
+  transform: scale(1.1);
+  transform-origin: left top;
+}
